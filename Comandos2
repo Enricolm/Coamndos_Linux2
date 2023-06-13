@@ -1,0 +1,140 @@
+mkdir filtrando_conteudo
+  763  cd filtrando_conteudo/
+  764  cp /etc/services .
+  765  ls
+  766  cd services
+  767  cat services
+  768  grep http *
+  769  grep https
+  770  cd Documents/
+  771  cd filtrando_conteudo/
+  772  grep https * 
+  773  cp /etc/passwd .
+  774  ls
+  775  greb enricolm * passwd
+  776  grep enricolm * passwd
+  777  grep -l enricolm * passwd
+  778  ls
+  779  grep -l enricolm * passwd
+  780  grep -L enricolm * passwd
+  781  cd ~
+  782  grep -i ssh *
+  783  cd -
+  784  cd ~
+  785  mkdir teste
+  786  mkdir teste/services2
+  787  cp /etc/services teste/services2
+  788  cd teste
+  789  ls
+  790  cd services
+  791  cd services2/
+  792  ls
+  793  grep -i http services
+  794  grep -irl http services
+  795  grep -ir http services
+  796  grep -ir http *
+  797  grep -r http *
+  798  cd ~
+  799  grep -r http *
+  800  ls
+  801  cd Documents
+  802  ls
+  803  grep -r http *
+  804  ls
+  805  cd filtrando_conteudo/
+  806  ls
+  807  cd ~
+  808  ls
+  809  mv -r teste /Documents/filtrando_conteudo
+  810  mv teste /Documents/filtrando_conteudo
+  811  mv teste ~/Documents/filtrando_conteudo
+  812  ls
+  813  cd Documents
+  814  cd filtrando_conteudo/
+  815  ls
+  816  mkdirteste2
+  817  mkdir teste2
+  818  mv passwd teste2
+  819  mv services teste2
+  820  ls
+  821  grep -ir http *
+  822  more teste2/services
+  823  less teste2/passwd
+  824  ls
+  825  tail teste2/passwd 
+  826  head teste2/passwd 
+  827  tail -3 teste2/passwd 
+  828  find / -name * .conf
+  829  ls
+  830  cd ~
+  831  find / -name *.conf
+  832  sudo find / -name*.conf
+  833  sudo find / -name *.conf
+  834  sudo find /etc -maxdepth 2 -name *.conf
+  835  find / -maxdepth 1 -name  *.conf
+  836  find / -maxdepth 1 -name *.conf
+  837  find /etc -maxdepth 1 -name *.conf
+  838  find ~/Documents/DataPipeline -size +100M
+  839  find ~/Documents/DataPipeline -size +10M
+  840  sudo find ~/Documents/DataPipeline -size -lh +10M
+  841  sudo find ~/Documents/DataPipeline -size +10M
+  842  cd Documents/DataPipeline/
+  843  ls -lh
+  844  find -atime 2
+  845  find . -atime 2
+  846  find .-atime 
+  847  find . -atime 
+  848  find . -atime -5 
+  849  cd ..
+  850  la
+  851  cd filtrando_conteudo/
+  852  cat /etc/passwd | grep enricolm > listagem.txt
+  853  ls
+  854  cat /etc/services | grep -i htttp > listagem.txt
+  855  cat /etc/services | grep -i http >> listagem.txt
+  856  ls
+  857  rm -r listagem.txt 
+  858  c Documents/listagem_conteudo
+  859  cd Documents/listagem_conteudo
+  860  cd Documents
+  861  ls
+  862  cd filtrando_conteudo/
+  863  cat /etc/services | grep -i http >> listagem.txt
+  864  ls
+  865  cat /etc/passwd | grep enricolm >> listagem.txt
+  866  cd ~
+  867  history 
+  868  cd Documents
+  869  ls
+  870  mkdir Data_github
+  871  cd ~
+  872  history > cd Documents/Data_github/comandos_linux.txt
+  873  history > Documents/Data_github/comandos_linux.txt
+  874  ls Documents/Data_github/comandos_linux.txt
+  875  Documents/Data_github/comandos_linux.txt
+  876  sudo Documents/Data_github/comandos_linux.txt
+  877  ls -l Documents/Data_github/comandos_linux.txt
+  878  cat Documents/Data_github/comandos_linux.txt
+  879  ls
+  880  cd Documents
+  881  cls
+  882  ls
+  883  cd filtrando_conteudo/
+  884  sudo apt get american-english
+  885  sudo apt install wamerican
+  886  ls
+  887  cat american-english | grep computer
+  888  cp /usr/share/dict/american-english .
+  889  ls
+  890  cat american-english | grep computer
+  891  cat american-english | grep -iE ^computer
+  892  cat american-english | grep -iE ^computer$
+  893  cat american-english | grep -iE ^computer$|smartphone
+  894  cat american-english | grep -iE ^computer$|grep smartphone
+  895  cat american-english | grep -iE "^computer$|smartphone"
+  896  cat american-english | grep -iE "^computer$|smartphone$"
+  897  cat american-english | grep -iE "^computer$|^smartphone"
+  898  cat american-english | grep -iE "^computer|^smartphone"
+  899  egrep "^computer|smartphone" american-english
+  900  egrep "^comp[aeiou]t[aeiou]r|sm[abc]rtphone" american-english
+  901  egrep "^com.....|smart....." american-english
